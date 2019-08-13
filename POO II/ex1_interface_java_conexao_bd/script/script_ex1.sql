@@ -1,0 +1,25 @@
+CREATE TABLE tb_aluno(
+	matricula VARCHAR(45) NOT NULL,
+	cpf VARCHAR(14) NOT NULL,
+	nome VARCHAR(100) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	telefone VARCHAR(16) NOT NULL,
+	PRIMARY KEY (matricula)
+);
+
+CREATE TABLE tb_professor(
+	cpf VARCHAR(14) NOT NULL,
+	nome VARCHAR(100) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	telefone VARCHAR(16) NOT NULL,
+	PRIMARY KEY (cpf)
+);
+
+CREATE TABLE tb_disciplina(
+	cod VARCHAR(30) NOT NULL,
+	nome VARCHAR(70) NOT NULL,
+	curso VARCHAR(50) NOT NULL,
+	carga_horaria INT NOT NULL,
+	ementa VARCHAR(500) NOT NULL
+	PRIMARY KEY (cod)
+);
